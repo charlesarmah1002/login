@@ -26,6 +26,7 @@ form {
     width: 50%;
     background: #fdfefe31;
     height: 50vh;
+    border-radius: 20px;
     backdrop-filter: blur();
 }
 .container {
@@ -44,4 +45,13 @@ form {
     align-items: center;
     justify-content: center;
     margin: 10px auto;
+}
+.input-field i {
+    margin: auto 5px;
+    color: #000000;
+    font-size: 20px;
+}
+.input-field input {
+    line-height: 20px;
+    width: 200px;
 }
