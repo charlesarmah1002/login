@@ -13,7 +13,7 @@ body {
     height: 100vh;
     width: 100%;
     max-width: 1400px;
-    background: linear-gradient(135deg, );
+    background: #0d80e8;
 }
 form {
     position: absolute;
@@ -24,6 +24,9 @@ form {
     left: 50%;
     transform: translate(-50%,-50%);
     width: 50%;
+    background: #fdfefe31;
+    height: 50vh;
+    backdrop-filter: blur();
 }
 .container {
     display: flex;
