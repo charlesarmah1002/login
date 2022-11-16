@@ -1,57 +1,93 @@
 @font-face {
-    font-family: opensans;
+    font-family: quicksand;
+    src: url(fonts/Quicksand-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: open-sans;
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: opensans;
-    scroll-behavior: smooth;
+    font-family: open-sans, sans-serif;
+    font-weight: 500;
 }
-body {
-    height: 100vh;
+
+.container {
     width: 100%;
-    max-width: 1400px;
-    background: #0d80e8;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e90d0d;
+    color: #fdfefe;
 }
 form {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
-    background: #fdfefe31;
-    height: 50vh;
-    border-radius: 20px;
-    backdrop-filter: blur();
-}
-.container {
+    min-width: 300px;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    height: 50vh;
 }
-.title {
+form h3 {
+    font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin: 10px auto;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: quicksand, sans-serif;
 }
-.input-field {
+form .input-field {
+    width: 80%;
+    margin: 10px auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px auto;
 }
-.input-field i {
-    margin: auto 5px;
-    color: #000000;
+.input-field{
+    transition: all 0.4s ease-in-out;
+}
+form .input-field i {
     font-size: 20px;
+    margin: auto 5px;
 }
-.input-field input {
-    line-height: 20px;
-    width: 200px;
+form .input-field input[type=email], 
+form .input-field input[type=password] {
+    width: calc(100% - 25px);
+    line-height: 30px;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+    border-bottom: 1.5px solid;
+    transition: all 0.3s ease-in-out;
+    background: transparent;
+    color: inherit;
+}
+.input-field:hover, .input-active {
+    scale: 1.2;
+}
+form .input-field input::placeholder{
+    opacity: 1;
+    color: #fdfefe;
+}
+button[type=submit]{
+    width: 300px;
+    margin-top: 20px;
+    padding: 7px;
+    font-size: 1.3rem;
+    border: none;
+    background: #121313;
+    color: #fdfefe;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+button[type=submit]:hover{
+    color: #121313;
+    background: #ffa400;
+    box-shadow: 0 5px 3px 0 #121313;
+    scale: 1.2;
 }
