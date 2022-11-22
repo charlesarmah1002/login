@@ -1,93 +1,102 @@
 @font-face {
-    font-family: quicksand;
-    src: url(fonts/Quicksand-VariableFont_wght.ttf);
-}
-@font-face {
     font-family: open-sans;
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: open-sans, sans-serif;
-    font-weight: 500;
+    font-family: open-sans;
 }
-
-.container {
-    width: 100%;
+body {
+    background: url(media/web-bg02-1340x670.jpg) #12131370;
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: multiply;
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #e90d0d;
-    color: #fdfefe;
 }
 form {
-    min-width: 300px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    height: 50vh;
+    background: #fdfefe41;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    text-align: center;
 }
-form h3 {
-    font-size: 2rem;
+.title{
+    font-size: 35px;
     text-transform: uppercase;
-    letter-spacing: 2px;
     font-weight: 700;
-    font-family: quicksand, sans-serif;
+    text-shadow: 0 0 0 10px;
 }
-form .input-field {
-    width: 80%;
-    margin: 10px auto;
+.input-field {
+    width: 250px;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-.input-field{
-    transition: all 0.4s ease-in-out;
-}
-form .input-field i {
-    font-size: 20px;
-    margin: auto 5px;
-}
-form .input-field input[type=email], 
-form .input-field input[type=password] {
-    width: calc(100% - 25px);
-    line-height: 30px;
-    outline: none;
+    align-items: center;
+    height: 50px;
     border: none;
-    margin: 0 10px;
-    border-bottom: 1.5px solid;
-    transition: all 0.3s ease-in-out;
+    background: #ffa400;
+    margin: 5px auto;
+    padding: 10px;
+}
+.input-field input{
+    width: 200px;
+    margin: 10px auto;
+    height: 30px;
+    border: none;
+    border-left: 1.5px solid;
     background: transparent;
-    color: inherit;
+    outline: none;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
 }
-.input-field:hover, .input-active {
-    scale: 1.2;
+label i {
+    color: #121313;
+    font-size: 20px;
+    cursor: pointer;
 }
-form .input-field input::placeholder{
-    opacity: 1;
-    color: #fdfefe;
-}
-button[type=submit]{
-    width: 300px;
-    margin-top: 20px;
-    padding: 7px;
-    font-size: 1.3rem;
-    border: none;
+.form-btn{
     background: #121313;
     color: #fdfefe;
+    padding: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 10px auto;
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
 }
-button[type=submit]:hover{
-    color: #121313;
-    background: #ffa400;
-    box-shadow: 0 5px 3px 0 #121313;
-    scale: 1.2;
+.form-btn:hover{
+    scale: 1.1;
+}
+form p {
+    text-align: center;
+}
+form p a {
+    text-decoration: none;
+}
+form p a:hover {
+    text-decoration: underline;
+}
+.brands { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+.brand {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease-in-out;
+}
+.brand:hover {
+    color: #fdfefe;
 }
