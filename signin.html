@@ -8,34 +8,28 @@
     <link rel="stylesheet" href="assets/css/solid.css">
     <link rel="stylesheet" href="assets/css/brands.css">
     <link rel="stylesheet" href="style.css">
-    <title>Register</title>
+    <title>Log In</title>
 </head>
 <body>
-    <form action="index.html" method="post" class="registration">
-        <h1 class="title">Register</h1>
+    <form action="index.html" method="post">
+        <h1 class="title">welcome</h1>
         <div class="user-img">
             <img src="" alt="">
         </div>
-        <!-- name -->
-        <div class="two-in-one">
-            <input type="text" name="fname" placeholder="First Name">
-            <input type="text" name="lname" placeholder="Last Name">
+        <div class="input-field">
+            <label for="email"><i class="fa-solid fa-user"></i></label>
+            <input type="email" name="email" id="email" required placeholder="Email">
         </div>
-        <!-- email -->
-        <input type="email" name="email" id="email">
-        <!-- date of birth -->
-        <input type="date" name="dob" id="dob">
-        <!-- gender -->
-        <div class="gender-input">
-            <label for="male"><i class="fa-solid fa-male"></i></label>
-            <input type="radio" name="gender" id="male">
-            <input type="radio" name="gender" id="female">
-            <label for="female"><i class="fa-solid fa-female"></i></label>
+        <div class="input-field">
+            <label for="password"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" name="password" id="password" required placeholder="Password">
         </div>
-        <!-- password -->
-        <input type="password" name="password" id="password">
-        <button type="submit" class="form-btn">Register</button>
-        <p>forgot password? <a href="signin.html" target="_blank" rel="noopener noreferrer">Register</a></p>
+        <div class="input-field">
+            <label for="password"><i class="fa-solid fa-lock"></i></label>
+            <input type="password" name="password" id="password" required placeholder="Confirm Password">
+        </div>
+        <button type="submit" class="form-btn">log in</button>
+        <p>forgot password? <a href="index.html" target="_blank" rel="noopener noreferrer">Log In</a></p>
         <div class="brands">
             <a href="" class="brand"><i class="fa-facebook fa-brands"></i></a>
             <a href="" class="brand"><i class="fa-instagram fa-brands"></i></a>

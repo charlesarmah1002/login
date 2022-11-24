@@ -9,6 +9,10 @@
     box-sizing: border-box;
     font-family: open-sans;
 }
+::placeholder {
+    color: inherit;
+    opacity: 1;
+}
 body {
     background: url(media/web-bg02-1340x670.jpg) #12131370;
     background-size: cover;

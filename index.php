@@ -18,11 +18,11 @@
         </div>
         <div class="input-field">
             <label for="email"><i class="fa-solid fa-user"></i></label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" required placeholder="Email">
         </div>
         <div class="input-field">
             <label for="password"><i class="fa-solid fa-lock"></i></label>
-            <input type="password" name="password" id="password" required>
+            <input type="password" name="password" id="password" required placeholder="Password">
         </div>
         <button type="submit" class="form-btn">log in</button>
         <p>forgot password? <a href="signin.html" target="_blank" rel="noopener noreferrer">Register</a></p>
